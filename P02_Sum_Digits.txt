@@ -1,0 +1,33 @@
+package F_09_Exercise_Data_Types_and_Variables;
+
+import java.util.Scanner;
+
+public class P02_Sum_Digits {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+/*
+You will be given a single integer.
+Your task is to find the sum of its digits.
+*/
+
+        int givenNumber = Integer.parseInt(scanner.nextLine());
+        int sumDigits = 0;
+
+        while (givenNumber > 0) {
+
+            int currentDigit = givenNumber % 10;
+
+           sumDigits += currentDigit;
+
+           givenNumber = givenNumber / 10;
+        }
+
+        System.out.println(sumDigits);
+
+
+
+
+    }
+}
