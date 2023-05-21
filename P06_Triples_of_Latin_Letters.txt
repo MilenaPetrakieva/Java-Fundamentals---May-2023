@@ -1,0 +1,63 @@
+package F_09_Exercise_Data_Types_and_Variables;
+
+import java.util.Scanner;
+
+public class P06_Triples_of_Latin_Letters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+
+/*
+Write a program to read an integer n and print all triples of the first n small Latin letters, ordered alphabetically
+
+Input       Output
+3           aaa
+            aab
+            aac
+            aba
+            abb
+            abc
+            aca
+            acb
+            acc
+            baa
+            bab
+            bac
+            bba
+            bbb
+            bbc
+            bca
+            bcb
+            bcc
+            caa
+            cab
+            cac
+            cba
+            cbb
+            cbc
+            cca
+            ccb
+            ccc
+
+Hints
+Perform 3 nested loops from 0 to n-1.
+*/
+
+        int numberLetters = Integer.parseInt(scanner.nextLine());
+
+        for (char letter1 = 'a'; letter1 < 'a' + numberLetters ; letter1++) {
+            for (char letter2 = 'a'; letter2 < 'a' + numberLetters; letter2++) {
+                for (char letter3 = 'a'; letter3 < 'a' + numberLetters; letter3++) {
+                    System.out.printf("%c%c%c%n", letter1, letter2, letter3);
+
+                }
+
+            }
+            
+        }
+
+
+
+    }
+}
